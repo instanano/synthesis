@@ -38,9 +38,9 @@
 <g><style>@keyframes wavedown{0%{transform:translate(0px,0px)}100%{transform:translate(400px,0px)}}
 @keyframes waveup{0%{transform:translate(0px,0px)}100%{transform:translate(-400px,0px)}}</style>
 <mask id="on" mask-type="alpha">
-<g style="--h:{{solventheight=200}}px;transform:translateY(calc(-1*var(--h)))"><path d="M-100,730 q100,20,200,0 t 200 0 200 0 200 0 200 0 200 0 200 0 200 0 200 0" stroke="#eeeeee" stroke-width="400" style="animation: 0.5s linear infinite both waveup"/>
-<path d="M-500,710 q100,20,200,0 t 200 0 200 0 200 0 200 0 200 0 200 0 200 0 200 0" stroke="#eeeeee" stroke-width="400" opacity="0.5" style="animation: 0.5s linear infinite both wavedown;"/></g></mask>
-<mask id="off" mask-type="alpha"><g style="--h:{{solventheight=200}}px;transform:translateY(calc(-1*var(--h)))"><path d="M-100,730 H1000" stroke="#eeeeee" stroke-width="400"/></g></mask>
+<g transform="translate(0 {{solventheight=0}})"><path d="M-100,530 q100,20,200,0 t 200 0 200 0 200 0 200 0 200 0 200 0 200 0 200 0" stroke="#eeeeee" stroke-width="400" style="animation: 0.5s linear infinite both waveup"/>
+<path d="M-500,510 q100,20,200,0 t 200 0 200 0 200 0 200 0 200 0 200 0 200 0 200 0" stroke="#eeeeee" stroke-width="400" opacity="0.5" style="animation: 0.5s linear infinite both wavedown;"/></g></mask>
+<mask id="off" mask-type="alpha"><g transform="translate(0 {{solventheight=0}})"><path d="M-100,530 H1000" stroke="#eeeeee" stroke-width="400"/></g></mask>
 <ellipse fill="{{solvent=lightblue}}" mask="url(#{{stirring=on}})" rx="180" ry="180" cx="185" cy="313" stroke="#eeeeee"/></g>
 <g><radialGradient id="grdRB" cx="90" cy="250" r="260" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.6" stop-color="#e4e4e4" stop-opacity="0.2"/><stop offset="1" stop-color="#555555" stop-opacity="0.4"/></radialGradient>
 <ellipse cx="185" cy="313" rx="185" ry="185" fill="url(#grdRB)"/></g>
